@@ -133,12 +133,6 @@
       "version": "1.0.0",
       "source": "builtin"
     },
-    "com.unity.modules.physics2d@1.0.0": {
-      "name": "com.unity.modules.physics2d",
-      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.modules.physics2d",
-      "version": "1.0.0",
-      "source": "builtin"
-    },
     "com.unity.modules.screencapture@1.0.0": {
       "name": "com.unity.modules.screencapture",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.modules.screencapture",
@@ -256,6 +250,12 @@
     "com.unity.modules.hierarchycore@1.0.0": {
       "name": "com.unity.modules.hierarchycore",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.modules.hierarchycore",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
+    "com.unity.modules.physics2d@1.0.0": {
+      "name": "com.unity.modules.physics2d",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.modules.physics2d",
       "version": "1.0.0",
       "source": "builtin"
     },
