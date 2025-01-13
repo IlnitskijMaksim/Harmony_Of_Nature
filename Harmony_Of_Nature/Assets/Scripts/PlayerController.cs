@@ -68,16 +68,8 @@ public class Player : MonoBehaviour
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
         float currentSpeed = isSprinting ? MoveSpeed * sprintMultiplier : MoveSpeed;
 
-        Vector3 targetVelocity = movement * currentSpeed;
-        Vector3 velocityChange = targetVelocity - rb.linearVelocity;
-
-        velocityChange.y = 0;
-        rb.AddForce(velocityChange, ForceMode.VelocityChange);
-
-        if (isGrounded && moveHorizontal == 0 && moveForward == 0)
-        {
-            rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
-        }
+        Vector3 targetPosition = rb.position + movement * currentSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(targetPosition);
     }
 
     void RotateCamera()
