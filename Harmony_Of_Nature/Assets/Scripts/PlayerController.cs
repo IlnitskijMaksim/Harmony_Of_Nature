@@ -68,8 +68,9 @@ public class Player : MonoBehaviour
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
         float currentSpeed = isSprinting ? MoveSpeed * sprintMultiplier : MoveSpeed;
 
-        Vector3 targetPosition = rb.position + movement * currentSpeed * Time.fixedDeltaTime;
-        rb.MovePosition(targetPosition);
+        Vector3 desiredVelocity = movement * currentSpeed;
+        desiredVelocity.y = rb.linearVelocity.y; // Зберігає вертикальну швидкість
+        rb.linearVelocity = desiredVelocity;
     }
 
     void RotateCamera()
