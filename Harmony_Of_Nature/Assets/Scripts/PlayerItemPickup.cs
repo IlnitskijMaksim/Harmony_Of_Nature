@@ -5,8 +5,6 @@ public class PlayerItemPickup : MonoBehaviour
     public float pickupRange = 2f;
     public LayerMask itemLayer;
 
-    private bool canGrowTrees = false;
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -18,7 +16,7 @@ public class PlayerItemPickup : MonoBehaviour
     void TryPickupItem()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, pickupRange, itemLayer);
-        
+
         if (hits.Length > 0)
         {
             GameObject item = hits[0].gameObject;
@@ -28,10 +26,7 @@ public class PlayerItemPickup : MonoBehaviour
 
     void PickupItem(GameObject item)
     {
-        Debug.Log("Предмет підібрано: " + item.name);
-        
-        canGrowTrees = true;
-        
+        Debug.Log("Picked up: " + item.name);
         Destroy(item);
     }
 
