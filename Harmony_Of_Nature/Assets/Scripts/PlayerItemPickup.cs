@@ -4,6 +4,8 @@ public class PlayerItemPickup : MonoBehaviour
 {
     public float pickupRange = 2f;
     public LayerMask itemLayer;
+    public bool hasArtifact = false;
+
 
     void Update()
     {
@@ -26,9 +28,19 @@ public class PlayerItemPickup : MonoBehaviour
 
     void PickupItem(GameObject item)
     {
-        Debug.Log("Picked up: " + item.name);
+        string itemName = item.name.Replace(" (Clone)", "");
+
+        // Проверяем, если это артефакт, выставляем hasArtifact = true
+        if (itemName == "Cube") // Замените "Artifact" на название вашего артефакта
+        {
+            hasArtifact = true;
+            Debug.Log("Artifact picked up! You can now grow trees.");
+        }
+
+        Debug.Log("Picked up: " + itemName);
         Destroy(item);
     }
+
 
     void OnDrawGizmos()
     {

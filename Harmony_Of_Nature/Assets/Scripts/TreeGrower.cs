@@ -4,7 +4,7 @@ public class TreeGrower : MonoBehaviour
 {
     public Vector3 growthAmount = new Vector3(1f, 1f, 1f);
 
-    private PlayerPickupConsumable player;
+    private PlayerPickupConsumable player; // Используем класс, где обработан инвентарь игрока
     private BoxCollider boxCollider;
 
     void Awake()
@@ -12,7 +12,7 @@ public class TreeGrower : MonoBehaviour
         boxCollider = GetComponent<BoxCollider>();
         if (boxCollider == null)
         {
-            Debug.LogWarning("BoxCollider �� ��������� �� TreeGrower");
+            Debug.LogWarning("BoxCollider не назначен на TreeGrower");
         }
     }
 
@@ -25,24 +25,32 @@ public class TreeGrower : MonoBehaviour
     {
         if (player == null)
         {
-            Debug.LogWarning("Player �� ����������� � TreeGrower");
+            Debug.LogWarning("Player не назначен в TreeGrower");
             return;
         }
 
-        if (player.UseItem("Cube"))
+        // Проверка: поднят ли артефакт
+        if (!player.GetComponent<PlayerItemPickup>().hasArtifact)
+        {
+            Debug.Log("You need to have the artifact to grow this tree.");
+            return;
+        }
+
+        // Если артефакт есть, проверяем расходник
+        if (player.UseItem("Cube")) // Замените "Seed" на название вашего расходника
         {
             Grow();
             Debug.Log("Tree has grown!");
         }
         else
         {
-            Debug.Log("Not enough Cubes to grow the tree.");
+            Debug.Log("Not enough Seeds to grow the tree.");
         }
     }
 
     void Grow()
     {
-        // �������� ��������� �����
+        // Увеличиваем размеры дерева
         transform.localScale += growthAmount;
     }
 }
