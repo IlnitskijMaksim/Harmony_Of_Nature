@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class TreeGrower : MonoBehaviour
 {
-    public Vector3 growthAmount = new Vector3(1f, 1f, 1f);
+    public GameObject[] treeStages;
+    private int currentStage = 0;
 
-    private PlayerPickupConsumable player; // Используем класс, где обработан инвентарь игрока
+    private PlayerPickupConsumable player;
     private BoxCollider boxCollider;
 
     void Awake()
@@ -29,18 +30,16 @@ public class TreeGrower : MonoBehaviour
             return;
         }
 
-        // Проверка: поднят ли артефакт
         if (!player.GetComponent<PlayerItemPickup>().hasArtifact)
         {
             Debug.Log("You need to have the artifact to grow this tree.");
             return;
         }
 
-        // Если артефакт есть, проверяем расходник
-        if (player.UseItem("Cube")) // Замените "Seed" на название вашего расходника
+        if (player.UseItem("Cube"))
         {
             Grow();
-            Debug.Log("Tree has grown!");
+            Debug.Log($"Tree has grown to stage {currentStage + 1}!");
         }
         else
         {
@@ -50,7 +49,27 @@ public class TreeGrower : MonoBehaviour
 
     void Grow()
     {
-        // Увеличиваем размеры дерева
-        transform.localScale += growthAmount;
+        if (currentStage + 1 < treeStages.Length)
+        {
+            // Зберігаємо позицію
+            Vector3 position = transform.position;
+
+            // Деактивуємо поточну модель
+            if (transform.childCount > 0)
+            {
+                Destroy(transform.GetChild(0).gameObject);
+            }
+
+            // Створюємо нову модель як дочірній об'єкт
+            currentStage++;
+            GameObject newTree = Instantiate(treeStages[currentStage], position, Quaternion.identity);
+            newTree.transform.parent = transform;
+            newTree.transform.localPosition = Vector3.zero;
+            newTree.transform.localPosition = Vector3.zero;
+        }
+        else
+        {
+            Debug.Log("Дерево вже на останній стадії.");
+        }
     }
 }
