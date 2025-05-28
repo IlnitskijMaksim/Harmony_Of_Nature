@@ -14,6 +14,8 @@ public class PlayerPickupConsumable : MonoBehaviour
     private Dictionary<string, int> inventory = new Dictionary<string, int>();
 
     private TreeGrower currentTreeInRange = null;
+    private TreeRestorer currentDryTreeInRange = null;
+
 
     void Update()
     {
@@ -24,12 +26,30 @@ public class PlayerPickupConsumable : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (currentTreeInRange != null)
-            {
-                currentTreeInRange.TryGrow();
-            }
-        }
+        	if (currentTreeInRange != null && currentDryTreeInRange != null)
+        	{
+            	// Вибираємо об'єкт, найближчий до гравця
+            	float distanceToGrower = Vector3.Distance(transform.position, currentTreeInRange.transform.position);
+            	float distanceToRestorer = Vector3.Distance(transform.position, currentDryTreeInRange.transform.position);
 
+            	if (distanceToGrower <= distanceToRestorer)
+            	{
+                	currentTreeInRange.TryGrow();
+            	}
+            	else
+            	{
+                	currentDryTreeInRange.TryRestore();
+            	}
+        	}
+        	else if (currentTreeInRange != null)
+        	{
+            	currentTreeInRange.TryGrow();
+        	}
+        	else if (currentDryTreeInRange != null)
+        	{
+            	currentDryTreeInRange.TryRestore();
+        	}
+        }
         UpdateInventoryUI();
     }
 
@@ -97,22 +117,38 @@ public class PlayerPickupConsumable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+		TreeRestorer dryTree = other.GetComponent<TreeRestorer>();
         TreeGrower tree = other.GetComponent<TreeGrower>();
         if (tree != null)
         {
             currentTreeInRange = tree;
             tree.SetPlayer(this);
         }
+        if (dryTree != null)
+        {
+            currentDryTreeInRange = dryTree;
+            dryTree.SetPlayer(this);
+            Debug.Log("TreeRestorer в зоні досяжності.");
+        }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
+		TreeRestorer dryTree = other.GetComponent<TreeRestorer>();
         TreeGrower tree = other.GetComponent<TreeGrower>();
         if (tree != null && tree == currentTreeInRange)
         {
             currentTreeInRange = null;
             tree.SetPlayer(null);
         }
+        if (dryTree != null && dryTree == currentDryTreeInRange)
+        {
+            Debug.Log("TreeRestorer вийшов із зони досяжності.");
+            currentDryTreeInRange = null;
+            dryTree.SetPlayer(null);
+        }
+
     }
 
     void OnDrawGizmos()

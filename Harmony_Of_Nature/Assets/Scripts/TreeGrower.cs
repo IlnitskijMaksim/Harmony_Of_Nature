@@ -6,7 +6,7 @@ public class TreeGrower : MonoBehaviour
     [Header("Tree Stages")]
     public GameObject[] treeStages;
     private GameObject currentTreeObject;
-    private int currentStage = 0;
+    public int currentStage = 0;
 
     [Header("Growth Settings")]
     public float timeBetweenGrowthStages = 10f; // Час між автостадіями
