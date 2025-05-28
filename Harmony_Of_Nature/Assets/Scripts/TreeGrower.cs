@@ -22,30 +22,38 @@ public class TreeGrower : MonoBehaviour
         player = playerScript;
     }
 
-    public void TryGrow()
-    {
-        if (player == null)
-        {
-            Debug.LogWarning("Player не назначен в TreeGrower");
-            return;
-        }
+	public void TryGrow()
+	{
+    	if (player == null)
+    	{
+        	Debug.LogWarning("Player не призначений в TreeGrower.");
+        	return;
+    	}
 
-        if (!player.GetComponent<PlayerItemPickup>().hasArtifact)
-        {
-            Debug.Log("You need to have the artifact to grow this tree.");
-            return;
-        }
+    // Перевірка, чи дерево досягло максимальної стадії
+    	if (currentStage + 1 >= treeStages.Length)
+    	{
+        	Debug.Log("Дерево вже на останній стадії.");
+        	return;
+    	}
 
-        if (player.UseItem("Cube"))
-        {
-            Grow();
-            Debug.Log($"Tree has grown to stage {currentStage + 1}!");
-        }
-        else
-        {
-            Debug.Log("Not enough Seeds to grow the tree.");
-        }
-    }
+    	if (!player.GetComponent<PlayerItemPickup>().hasArtifact)
+    	{
+        	Debug.Log("Вам потрібен артефакт, щоб виростити це дерево.");
+        	return;
+    	}
+
+    // Використовуємо насіння лише якщо можемо виростити дерево
+    	if (player.UseItem("Cube"))
+    	{
+        	Grow();
+        	Debug.Log($"Tree виросло до стадії {currentStage + 1}!");
+    	}
+    	else
+    	{
+        	Debug.Log("Недостатньо насіння, щоб виростити дерево.");
+    	}
+	}
 
     void Grow()
     {
