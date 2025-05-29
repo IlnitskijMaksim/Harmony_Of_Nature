@@ -8,6 +8,14 @@
     "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Packages\\packages-lock.json"
   ],
   "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.2d.sprite",
+      "fingerprint": "0e3cfd27a2b4d364334434d9dcc1bf1f6d795736",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin"
+    },
     "com.unity.ai.navigation@2.0.7": {
       "name": "com.unity.ai.navigation",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.ai.navigation",

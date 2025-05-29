@@ -31,7 +31,7 @@ public class PlayerItemPickup : MonoBehaviour
         string itemName = item.name.Replace(" (Clone)", "");
 
         // Проверяем, если это артефакт, выставляем hasArtifact = true
-        if (itemName == "Cube") // Замените "Artifact" на название вашего артефакта
+        if (itemName == "Artifact") // Замените "Artifact" на название вашего артефакта
         {
             hasArtifact = true;
             Debug.Log("Artifact picked up! You can now grow trees.");
