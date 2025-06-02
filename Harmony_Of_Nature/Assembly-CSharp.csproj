@@ -467,6 +467,9 @@
     <Reference Include="UnityEditor.XRModule">
       <HintPath>D:\UnityInstalls\6000.0.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.collections\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.ext.nunit\net40\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
@@ -478,9 +481,6 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.collections\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\UnityInstalls\6000.0.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -884,20 +884,20 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
