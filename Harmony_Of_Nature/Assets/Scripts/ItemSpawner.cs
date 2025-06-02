@@ -31,7 +31,10 @@ public class ItemSpawner : MonoBehaviour
             GameObject consumablePrefab = consumablePrefabs[Random.Range(0, consumablePrefabs.Length)];
 
             // Создаем объект
-            Instantiate(consumablePrefab, new Vector3(randomX, y, randomZ), Quaternion.identity, terrain.transform);
+            GameObject spawnedObject = Instantiate(consumablePrefab, new Vector3(randomX, y, randomZ), Quaternion.identity, terrain.transform);
+
+            // Устанавливаем имя без суффикса (Clone)
+            spawnedObject.name = consumablePrefab.name;
         }
     }
 
@@ -48,7 +51,10 @@ public class ItemSpawner : MonoBehaviour
             float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
 
             // Создаем артефакт
-            Instantiate(artifactPrefab, new Vector3(randomX, y, randomZ), Quaternion.identity, terrain.transform);
+            GameObject spawnedArtifact = Instantiate(artifactPrefab, new Vector3(randomX, y, randomZ), Quaternion.identity, terrain.transform);
+
+            // Устанавливаем имя без суффикса (Clone)
+            spawnedArtifact.name = artifactPrefab.name;
         }
     }
 }
