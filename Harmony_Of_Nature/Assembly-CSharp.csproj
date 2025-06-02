@@ -47,48 +47,48 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\Scripts\CameraCollision.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\TreeInfester.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\TreeGrower.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\TreeSpawner.cs" />
-    <Compile Include="Assets\Scripts\CameraCollision.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\TreeRestorer.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\PlayerItemPickup.cs" />
     <Compile Include="Assets\Scripts\PlayerPickupConsumable.cs" />
-    <Compile Include="Assets\Scripts\TreeInfester.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Roboto-Bold - License.txt" />
@@ -476,6 +476,12 @@
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.visualscripting\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\PackageCache\com.unity.collections\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\UnityInstalls\6000.0.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
     </Reference>
@@ -848,11 +854,83 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rendering.LightTransport.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
@@ -878,32 +956,23 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
@@ -914,26 +983,35 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    <Reference Include="Unity.Rendering.LightTransport.Runtime">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.Rendering.LightTransport.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>D:\Github\Harmony_Of_Nature\Harmony_Of_Nature\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

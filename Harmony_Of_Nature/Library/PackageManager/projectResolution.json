@@ -55,6 +55,14 @@
       "version": "3.4.0",
       "source": "registry"
     },
+    "com.unity.render-pipelines.universal@17.0.3": {
+      "name": "com.unity.render-pipelines.universal",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.render-pipelines.universal",
+      "fingerprint": "a7f1dce8ff25b8b6f5881a1b4778c59f184e1e92",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
     "com.unity.timeline@1.8.7": {
       "name": "com.unity.timeline",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.timeline",
@@ -283,6 +291,30 @@
       "version": "1.0.0",
       "source": "builtin"
     },
+    "com.unity.render-pipelines.core@17.0.3": {
+      "name": "com.unity.render-pipelines.core",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.render-pipelines.core",
+      "fingerprint": "f03893723589a54ccf193bfa6f71d49e008f2a0b",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
+    "com.unity.shadergraph@17.0.3": {
+      "name": "com.unity.shadergraph",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.shadergraph",
+      "fingerprint": "eca4a6966cf18d8c9bf4c3bbc4a2e20b4a82c17c",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
+    "com.unity.render-pipelines.universal-config@17.0.3": {
+      "name": "com.unity.render-pipelines.universal-config",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.render-pipelines.universal-config",
+      "fingerprint": "fa63c96d3e1af317d84d171cd6c0e0658ab159df",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
     "com.unity.ide.visualstudio@2.0.22": {
       "name": "com.unity.ide.visualstudio",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.ide.visualstudio",
@@ -331,6 +363,46 @@
       "version": "1.2.5",
       "source": "registry"
     },
+    "com.unity.searcher@4.9.2": {
+      "name": "com.unity.searcher",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.searcher",
+      "fingerprint": "90d011a70418fd5b0f4b8e86df39444d2af228dd",
+      "editorCompatibility": "2019.1.0a1",
+      "version": "4.9.2",
+      "source": "registry"
+    },
+    "com.unity.burst@1.8.16": {
+      "name": "com.unity.burst",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.burst",
+      "fingerprint": "000840f9394643fba72955ad6e31718ddf96ec36",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "1.8.16",
+      "source": "registry"
+    },
+    "com.unity.mathematics@1.3.2": {
+      "name": "com.unity.mathematics",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.mathematics",
+      "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.3.2",
+      "source": "registry"
+    },
+    "com.unity.collections@2.4.1": {
+      "name": "com.unity.collections",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.collections",
+      "fingerprint": "6fee59cd6ff39d27e6f29da7a92f8e37c60f5e72",
+      "editorCompatibility": "2022.3.11f1",
+      "version": "2.4.1",
+      "source": "registry"
+    },
+    "com.unity.rendering.light-transport@1.0.1": {
+      "name": "com.unity.rendering.light-transport",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.rendering.light-transport",
+      "fingerprint": "9cfe9148c33510acdec95a74b13c3383e8957896",
+      "editorCompatibility": "2023.3.0b1",
+      "version": "1.0.1",
+      "source": "builtin"
+    },
     "com.unity.settings-manager@2.0.1": {
       "name": "com.unity.settings-manager",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.settings-manager",
@@ -345,6 +417,22 @@
       "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
+      "source": "registry"
+    },
+    "com.unity.nuget.mono-cecil@1.11.4": {
+      "name": "com.unity.nuget.mono-cecil",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.nuget.mono-cecil",
+      "fingerprint": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "1.11.4",
+      "source": "registry"
+    },
+    "com.unity.test-framework.performance@3.0.3": {
+      "name": "com.unity.test-framework.performance",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.test-framework.performance",
+      "fingerprint": "fb0dc592af8b524f1a06c50d7caf95552f1bcd2f",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "3.0.3",
       "source": "registry"
     }
   }
