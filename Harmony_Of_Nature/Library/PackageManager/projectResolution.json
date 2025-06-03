@@ -63,6 +63,14 @@
       "version": "17.0.3",
       "source": "builtin"
     },
+    "com.unity.terrain-tools@5.1.2": {
+      "name": "com.unity.terrain-tools",
+      "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.terrain-tools",
+      "fingerprint": "d4bcf51a280e611c70611a4f4045f686f2948913",
+      "editorCompatibility": "2023.1.0a25",
+      "version": "5.1.2",
+      "source": "registry"
+    },
     "com.unity.timeline@1.8.7": {
       "name": "com.unity.timeline",
       "resolvedPath": "D:\\Github\\Harmony_Of_Nature\\Harmony_Of_Nature\\Library\\PackageCache\\com.unity.timeline",
